@@ -1,0 +1,57 @@
+.header {
+  box-shadow: 0 0 5px 0 gray;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.headerTitle {
+  display: flex;
+  justify-content: space-between;
+}
+.headerSize {
+  font-size: 60px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.HeaderList {
+  display: flex;
+  align-items: center;
+}
+.headerListSelect {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  cursor: pointer;
+}
+
+.select {
+  width: 100px;
+  border: none;
+  cursor: pointer;
+}
+.headerButton {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  cursor: pointer;
+}
+.button {
+  width: 100px;
+  height: 34px;
+  background: transparent;
+  border-radius: 3px;
+  border: solid 1px;
+}
+.button:hover {
+  background-color: rgb(96, 199, 250);
+}

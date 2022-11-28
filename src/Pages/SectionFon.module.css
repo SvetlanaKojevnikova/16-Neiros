@@ -1,0 +1,55 @@
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.section1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sectionImg {
+  margin-top: 10px;
+  background-image: url("../assets/fon.jpg");
+  border-radius: 20px;
+}
+.position {
+  padding: 30px 0 40px 70px;
+}
+.sectionList1 {
+  display: flex;
+  column-gap: 30px;
+  margin-bottom: 20px;
+}
+
+.list {
+  color: rgb(248, 252, 254);
+}
+.buttons {
+  display: flex;
+  column-gap: 20px;
+}
+.btn {
+  width: 100px;
+  height: 30px;
+  background-color: rgb(195, 189, 189);
+  color: white;
+  font-weight: 800px;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+}
+.text {
+  display: flex;
+  color: white;
+  font-size: 40px;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.sectionList2 {
+  margin-top: 30px;
+  display: flex;
+  column-gap: 25px;
+  color: white;
+}
