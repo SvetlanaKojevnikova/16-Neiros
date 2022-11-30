@@ -11,25 +11,24 @@ function Header() {
           </div>
           <div className={styles.HeaderList}>
             <ul className={styles.headerListSelect}>
-              <li className={styles.text}>
-                <select className={`${styles.select} ${styles.text}`}>
-                  <option value="Решения">Решения</option>
-                  <option value="Коллтрекинг">Коллтрекинг</option>
-                  <option value="Аналитика">Аналитика</option>
-                  <option value="Консультант">Консультант</option>
-                </select>
-              </li>
-              <li>Тарифы</li>
-              <li>
-                <select className={styles.select}>
-                  <option value="Информация">Решения</option>
-                  <option value="Блог">Блог</option>
-                  <option value="Партнерская программа">
-                    Партнерская программа
-                  </option>
-                  <option value="Инструменты">Инструменты</option>
-                </select>
-              </li>
+              <select className={`${styles.select} ${styles.text}`}>
+                <option value="Решения">Решения</option>
+                <option value="Коллтрекинг">Коллтрекинг</option>
+                <option value="Аналитика">Аналитика</option>
+                <option value="Консультант">Консультант</option>
+              </select>
+
+              <li className={styles.text}>Тарифы</li>
+
+              <select className={styles.select}>
+                <option value="Информация">Решения</option>
+                <option value="Блог">Блог</option>
+                <option value="Партнерская программа">
+                  Партнерская программа
+                </option>
+                <option value="Инструменты">Инструменты</option>
+              </select>
+
               <li>Контакты</li>
             </ul>
           </div>

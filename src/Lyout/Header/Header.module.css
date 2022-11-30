@@ -1,7 +1,5 @@
 .header {
   box-shadow: 0 0 5px 0 gray;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .container {
@@ -12,10 +10,12 @@
 }
 .headerTitle {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 .headerSize {
-  font-size: 60px;
+  font-size: 3.75rem;
 }
 
 .logo {
@@ -30,8 +30,10 @@
 .headerListSelect {
   display: flex;
   flex-direction: row;
-  column-gap: 20px;
+  column-gap: 1.25rem;
   cursor: pointer;
+  font-size: 1rem;
+  flex-wrap: wrap;
 }
 
 .select {
@@ -42,12 +44,13 @@
 .headerButton {
   display: flex;
   align-items: center;
-  column-gap: 20px;
+  column-gap: 1.25rem;
   cursor: pointer;
+  flex-wrap: wrap;
 }
 .button {
-  width: 100px;
-  height: 34px;
+  width: 6.25rem;
+  height: 2.125rem;
   background: transparent;
   border-radius: 3px;
   border: solid 1px;
