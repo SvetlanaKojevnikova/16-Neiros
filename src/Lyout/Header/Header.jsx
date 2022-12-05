@@ -1,47 +1,50 @@
 import styles from "./Header.module.css";
 import { BiSearch } from "react-icons/bi";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
-    <header className={styles.header}>
-      <div className={styles.container}>
-        <nav className={styles.headerTitle}>
-          <div className={styles.logo}>
-            <h1 className={styles.headerSize}>Neiros</h1>
-          </div>
-          <div className={styles.HeaderList}>
-            <ul className={styles.headerListSelect}>
-              <select className={`${styles.select} ${styles.text}`}>
-                <option value="Решения">Решения</option>
-                <option value="Коллтрекинг">Коллтрекинг</option>
-                <option value="Аналитика">Аналитика</option>
-                <option value="Консультант">Консультант</option>
-              </select>
-
-              <li className={styles.text}>Тарифы</li>
-
-              <select className={styles.select}>
-                <option value="Информация">Решения</option>
-                <option value="Блог">Блог</option>
-                <option value="Партнерская программа">
-                  Партнерская программа
-                </option>
-                <option value="Инструменты">Инструменты</option>
-              </select>
-
-              <li>Контакты</li>
-            </ul>
-          </div>
-          <div className={styles.headerButton}>
-            <div>
-              <BiSearch />
+    <>
+      <header className={styles.header}>
+        <div className={styles.container}>
+          <nav className={styles.headerTitle}>
+            <div className={styles.logo}>
+              <h1 className={styles.headerSize}>Neiros</h1>
             </div>
-            <p className={styles.text}>Вход</p>
-            <button className={styles.button}>Регистрация</button>
-          </div>
-        </nav>
-      </div>
-    </header>
+            <div className={styles.HeaderList}>
+              <ul className={styles.headerListSelect}>
+                <li>
+                  <NavLink className={styles.active} to=".">
+                    Home
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="solution">Решения</NavLink>
+                </li>
+                <li>
+                  <NavLink to="tarrifs">Тарифы</NavLink>
+                </li>
+                <li>
+                  <NavLink to="solutions">Решения</NavLink>
+                </li>
+                <li>
+                  <NavLink to="contacts">Контакты</NavLink>
+                </li>
+              </ul>
+            </div>
+            <div className={styles.headerButton}>
+              <div>
+                <BiSearch />
+              </div>
+              <p className={styles.text}>Вход</p>
+              <button>
+                <NavLink to="register">Регистрация</NavLink>
+              </button>
+            </div>
+          </nav>
+        </div>
+      </header>
+    </>
   );
 }
 

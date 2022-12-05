@@ -5,6 +5,10 @@
   list-style-type: none;
 }
 
+.active {
+  color: aqua;
+  text-decoration: none;
+}
 .container {
   width: 100%;
   max-width: 1280px;
